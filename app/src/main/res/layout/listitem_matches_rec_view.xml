@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    android:id="@+id/matchCard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:id="@+id/relLayHome">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/imgBadgeHome"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtTeamNameHome"
+            android:layout_toRightOf="@+id/imgBadgeHome"
+            android:text="Arsenal"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtTeamHalfResHome"
+            android:layout_toRightOf="@+id/txtTeamNameHome"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginRight="2dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtTeamEndResHome"
+            android:layout_toRightOf="@+id/txtTeamHalfResHome"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginRight="2dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relLayAway"
+        android:layout_marginTop="65dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/imgBadgeAway"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtTeamNameAway"
+            android:layout_toRightOf="@+id/imgBadgeAway"
+            android:text="Manchester United"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtTeamHalfResAway"
+            android:layout_toRightOf="@+id/txtTeamNameAway"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginRight="2dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtTeamEndResAway"
+            android:layout_toRightOf="@+id/txtTeamHalfResAway"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginRight="2dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

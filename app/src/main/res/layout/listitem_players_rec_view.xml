@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    android:id="@+id/playersCard"
+    app:cardBackgroundColor="@color/headerColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@color/backGroundColor">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Schmeichel Kasper"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:id="@+id/txtPlayersName"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtPlayersName"
+            android:text="#29"
+            android:textStyle="italic"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:id="@+id/txtPlayersNumber"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

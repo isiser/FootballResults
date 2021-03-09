@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/headerColor"
+        android:padding="15dp"
+        android:id="@+id/headerLeague">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/football_icon"
+            android:id="@+id/iconFootballLeg"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Football Results"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/backGroundColor"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:id="@+id/NameOfApp"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="1. NHL"
+            android:textColor="@color/backGroundColor"
+            android:layout_below="@id/NameOfApp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/nameOfLeague"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/headerLeague"
+        android:id="@+id/chooseTabLay"
+        android:theme="@style/AppTheme">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tabLayoutFragments" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chooseTabLay"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fragmentLeagueTwo">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentsViewpager"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

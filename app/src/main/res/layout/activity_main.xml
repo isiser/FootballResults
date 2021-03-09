@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/headerColor"
+        android:padding="15dp"
+        android:id="@+id/header">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/football_icon"
+            android:id="@+id/iconFootball"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Football Results"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/backGroundColor"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/header"
+        android:id="@+id/odabirLige"
+        android:theme="@style/AppTheme">
+
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/spinnerOdabirLige"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/odabirLige"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/popisLiga">
+
+        <!--<fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="org.vsmti.soliver.footballresults.fragments.LeaguesFragment"
+            android:id="@+id/LeaguesFragment"/>-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerLeague"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

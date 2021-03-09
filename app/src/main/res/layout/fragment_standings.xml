@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/headerStanding">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:text="Position"
+            android:textStyle="bold"
+            android:id="@+id/txtPosition"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Team name"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txtTeamNameStanding"
+            android:layout_toRightOf="@id/txtPosition"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="W"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txtW"
+            android:layout_toRightOf="@id/txtTeamNameStanding"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="D"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txtD"
+            android:layout_toRightOf="@id/txtW"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="L"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txtL"
+            android:layout_toRightOf="@id/txtD"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="Total"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txtTotal"
+            android:layout_toRightOf="@id/txtL"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:background="@color/headerColor"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recViewStandings"
+        android:layout_below="@id/headerStanding"/>
+
+</RelativeLayout>

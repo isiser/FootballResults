@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayName"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogNameHead"/>
+
+        <TextView
+            android:layout_toRightOf="@id/dialogNameHead"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Schmeichel Kasper"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogName"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayNumber"
+        android:layout_below="@+id/linLayName">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Number: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogNumberHead"/>
+
+        <TextView
+            android:layout_toRightOf="@id/dialogNumberHead"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="1"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogNumber"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayCountry"
+        android:layout_below="@+id/linLayNumber">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Country: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogCountryHead"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dialogCountryHead"
+            android:textAlignment="center"
+            android:text="Denmark"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogCountry"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayType"
+        android:layout_below="@+id/linLayCountry">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Type: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogTypeHead"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dialogTypeHead"
+            android:textAlignment="center"
+            android:text="Goalkeepers"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogType"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayAge"
+        android:layout_below="@+id/linLayType">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Age: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogAgeHead"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_toRightOf="@id/dialogAgeHead"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="33"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogAge"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayMatchPlayed"
+        android:layout_below="@+id/linLayAge">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Match played: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogMatchPlayedHead"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dialogMatchPlayedHead"
+            android:textAlignment="center"
+            android:text="34"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogMatchPlayed"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayGoals"
+        android:layout_below="@+id/linLayMatchPlayed">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Goals: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogGoalsHead"/>
+
+        <TextView
+            android:layout_toRightOf="@id/dialogGoalsHead"
+            android:layout_width="160dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogGoals"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayYellow"
+        android:layout_below="@+id/linLayGoals">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Yellow cards: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogYellowHead"/>
+
+        <TextView
+            android:layout_toRightOf="@id/dialogYellowHead"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="2"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogYellow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayRed"
+        android:layout_below="@+id/linLayYellow">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Red cards: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialogRedHead"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dialogRedHead"
+            android:textAlignment="center"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/dialogRed"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="DISMISS"
+        android:layout_below="@+id/linLayRed"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnDialogPlayer"/>
+
+
+</RelativeLayout>
